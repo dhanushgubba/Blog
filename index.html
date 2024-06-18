@@ -1,0 +1,68 @@
+]<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Awesome Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="blog-post">
+            <h2>Exploring the Beauty of Nature</h2>
+            <p>Posted on <time datetime="2024-06-18">June 18, 2024</time> by GUBBA VENKATA NAGA DHANUSH</p>
+            <img src="image.jpg" alt="Beautiful Nature Scene" class="post-image">
+            <p>Nature, in its infinite variety and splendor, offers an unparalleled experience of beauty, tranquility, and wonder. From the towering mountains to the vast oceans, and from the dense forests to the open skies, the natural world captivates and inspires. In this blog post, we'll explore some of the most breathtaking aspects of nature and understand why it holds such a special place in our hearts.</p>
+            <a href="#" class="read-more">Read More</a>
+        </article>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm GUBBA VENKATA NAGA DHANUSH, a passionate blogger who loves to write about technology and lifestyle. Welcome to my blog!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>You can reach out to us through our social media handles below:</p>
+        </section>
+
+        <section id="Gallery">
+            <h2>Gallery</h2>
+            <p>Comming soon !!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Follow us on:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/gubba-venkata-naga-dhanush-43151b255/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/dhanush_2005.psds?igsh=MTM2bTVoNmdvem5kNw==" target="_blank">Instagram</a></li>
+        </ul>
+        <p>&copy; 2024 Awesome Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
